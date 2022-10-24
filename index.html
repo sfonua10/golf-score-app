@@ -23,39 +23,134 @@
 </head>
 
 <body>
-  <h1">Golf Scoree App</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12" id="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12" id="header">
+        <h1>Let's play some golf!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div id="options-container">
           <div class="form-group">
             <label for="course-select">Select Course</label>
-            <select class="form-control" id="course-select" onchange="getIndividualCourse(value);"></select>
-          </div>
-          <div class="form-group">
-            <label for="course-select">Select Course</label>
-            <select class="form-control" id="tee-box-select"></select>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <div id="options-container"></div>
-        </div>
-      </div>
-
-      <div class="row" id="scorecard-container">
-        <div class="col-lg-12" id="scorecard">
-          <div class="table-responsive">
-            <table class="table table-bordered"></table>
-          </div>
-
-          <div class="table-responsive">
-            <table class="table table-bordered"></table>
+            <select class="form-control" id="course-select" onchange="getIndividualCourse(value);">
+            </select>
           </div>
         </div>
       </div>
     </div>
-    <script src="index.js"></script>
+
+    <div class="row" id="scorecard-container">
+      <div class="col-lg-12" id="scorecard">
+        <div class="table-responsive">
+          <table id="golf-table" class="table table-bordered">
+          </table>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-bordered">
+          </table>
+        </div>
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Holes</th>
+              <th scope="col">1</th>
+              <th scope="col">2</th>
+              <th scope="col">3</th>
+              <th scope="col">4</th>
+              <th scope="col">5</th>
+              <th scope="col">6</th>
+              <th scope="col">7</th>
+              <th scope="col">8</th>
+              <th scope="col">9</th>
+              <th scope="col">10</th>
+              <th scope="col">11</th>
+              <th scope="col">12</th>
+              <th scope="col">13</th>
+              <th scope="col">14</th>
+              <th scope="col">15</th>
+              <th scope="col">16</th>
+              <th scope="col">17</th>
+              <th scope="col">18</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Yardage</th>
+              <td>391</td>
+              <td>521</td>
+              <td>195</td>
+              <td>195</td>
+              <td>195</td>
+              <td>195</td>
+              <td>195</td>
+              <td>195</td>
+              <td>195</td>
+              <td>391</td>
+              <td>521</td>
+              <td>195</td>
+              <td>195</td>
+              <td>195</td>
+              <td>195</td>
+              <td>195</td>
+              <td>195</td>
+              <td>195</td>
+            </tr>
+            <tr>
+              <th scope="row">Par</th>
+              <td>4</td>
+              <td>5</td>
+              <td>3</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>3</td>
+              <td>5</td>
+              <td>4</td>
+              <td>5</td>
+              <td>3</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>3</td>
+              <td>5</td>
+            </tr>
+            <!-- <tr>
+              <th scope="row">Handicap</th>
+              <td>3</td>
+              <td>5</td>
+              <td>11</td>
+              <td>13</td>
+              <td>15</td>
+              <td>1</td>
+              <td>9</td>
+              <td>17</td>
+              <td>7</td>
+              <td>3</td>
+              <td>5</td>
+              <td>11</td>
+              <td>13</td>
+              <td>15</td>
+              <td>1</td>
+              <td>9</td>
+              <td>17</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <th>Luigi</th>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 
 </html>
